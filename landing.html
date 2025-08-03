@@ -1,0 +1,129 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gana con nosotros</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0033ff; /* Azul eléctrico */
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Encabezado animado */
+    .marquee {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: #8000ff; /* Violeta oscuro */
+      color: white;
+      padding: 10px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Título con efecto neón */
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 40px;
+      color: #cc66ff;
+      text-shadow:
+        0 0 5px #cc66ff,
+        0 0 10px #cc66ff,
+        0 0 20px #cc66ff,
+        0 0 40px #8000ff,
+        0 0 80px #8000ff;
+    }
+
+    /* Botón violeta */
+    .button {
+      background-color: #8000ff;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #a64dff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    }
+
+    /* Botón WhatsApp */
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
+      margin: 10px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+    }
+
+    .whatsapp-button img {
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado animado -->
+  <div class="marquee">
+    <span>🔥 Premios especiales - Maquinas exclusivas - Hacé tu carga ahora 🔥</span>
+  </div>
+
+  <!-- Título con efecto neón -->
+  <h1>¡CASINO FLORIDA!</h1>
+
+  <!-- Botones -->
+<a href="https://ganaencasa.cv/" class="button">Gana con nosotros!!!</a>
+
+  <a href="https://wa.me/5492235845825" class="whatsapp-button">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    Contactar por WhatsApp
+  </a>
+
+</body>
+</html>
